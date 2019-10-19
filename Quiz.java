@@ -33,7 +33,7 @@ public class Quiz {
           if(g[i].score > greatestScore){
             group = g[i];
             greatestScore = g[i].score;
-            index = 0;
+            index = i;
           }
         }
       temp.add(group);
