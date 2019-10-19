@@ -16,7 +16,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.text.*;
 public class idontknwo extends Application {
-
+    SelectionGroup<Student> allstudents;
     public static void main(String[] args) {
         launch(args);
     }
@@ -41,6 +41,7 @@ public class idontknwo extends Application {
             TextField tx = new TextField();
             pane.add(tx, 1, 1);
             b.setOnAction((ActionEvent e) -> {
+                allstudents.add(Student())
                 //method.setName(tx.getText());
                 tx.clear();
             });

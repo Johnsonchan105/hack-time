@@ -1,8 +1,9 @@
 public class SelectionGroup(){
-  private ArrayList<Student> students;
+  public ArrayList<Student> students;
   private ArrayList<String> names;
   private ArrayList<String> selected;
   private String groupname;
+  public int score = 0;
   public SelectionGroup(String name){
     groupname = name;
     names = new Arraylist<Student>;
@@ -17,7 +18,7 @@ public class SelectionGroup(){
   }
   public void removeStudent(Student student){
     for(int i=0;i<names.length();i++){
-      if((names.get(i)).equals(student.name);
+      if((names.get(i)).equals(student.name));
         names.remove(i);
         student.remove(i);
         break;
