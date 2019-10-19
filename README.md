@@ -1,4 +1,4 @@
-<span style="color:blue"> #hack-time </span>
+#hack-time
 
 This is a project about education 
 
