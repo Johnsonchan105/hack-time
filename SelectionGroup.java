@@ -8,8 +8,7 @@ public class SelectionGroup(){
     groupname = name;
     names = new Arraylist<Student>;
   }
-  public SelectionGroup(String name, ArrayList<Student> currnames){
-    groupname = name;
+  public SelectionGroup(ArrayList<Student> currnames){
     names = currnames;
   }
   public void addStudent(Student student){
