@@ -11,9 +11,9 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
-import java.util.concurrent.atomic.AtomicBoolean;
-
 public class idontknwo extends Application {
+    int numOfGroups = 0;
+    ArrayList<String> totals = new ArrayList<String>();
 
     public static void main(String[] args) {
         launch(args);
@@ -21,11 +21,12 @@ public class idontknwo extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+      //create pane
         GridPane pane = new GridPane();
         pane.setPadding(new Insets(50, 50, 50, 50));
         pane.setHgap(10);
         pane.setVgap(10);
-
+      //creates the buttons and displays
         Text enter = new Text("Welcome");
         enter.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         pane.add(enter, 0, 0, 2, 1);
@@ -37,9 +38,10 @@ public class idontknwo extends Application {
         pane.add(b2, 0, 5, 2, 1);
         TextField tx = new TextField();
         pane.add(tx, 1, 2);
+        //every time that next is pressed, total names increases
         b.setOnAction((ActionEvent e) -> {
             if (tx.getText() != null && !tx.getText().isEmpty())
-                //method.setName(tx.getText());
+                totals.add(tx.getText());
             tx.clear();
         });
         pane.add(new Label("People per Group"), 0, 4, 2, 1);
@@ -49,9 +51,9 @@ public class idontknwo extends Application {
             @Override
             public void handle(ActionEvent actionEvent) {
                 if(tt.getText() != null && !tt.getText().isEmpty()){
-                    //method.aaa(Integer.parseInt(tt.getText()));
-                    tt.clear();
+                    numOfGroups = Integer.valueOf(tt.getText());
                 }
+                tt.clear();
             }
         });
         Scene scene = new Scene(pane, 300, 275);
@@ -68,6 +70,7 @@ public class idontknwo extends Application {
 
 
     }
-
-
+    private void store(int a) {
+      num = a;
+    }
 }
