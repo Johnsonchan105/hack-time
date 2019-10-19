@@ -1,3 +1,4 @@
+
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
@@ -15,7 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.text.*;
-public class idontknwo extends Application {
+public class UI extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -60,6 +61,5 @@ public class idontknwo extends Application {
         primaryStage.show();
 
     }
-
 
 }
