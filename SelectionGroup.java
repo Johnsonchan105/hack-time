@@ -38,5 +38,6 @@ public class SelectionGroup(){
       students.remove(randomnumber);
       numberofstudents--;
     }
+    return selected;
   }
 }
