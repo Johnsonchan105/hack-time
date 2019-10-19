@@ -16,7 +16,7 @@ public class Quiz {
     //game finished
     sortGroupsByScore(groups);
     for(int i = 0;i < groups.size(); i++){
-      System.out.print("Rank number " + (i+1) + " is " + groups[i].name + " with " + groups[i].score + " !");
+      System.out.print("Group number " + (i+1) + " is " + groups[i].name + " with " + groups[i].score + " !");
 
     }
     //not implemented
