@@ -1,6 +1,10 @@
 # hack-time
 This is a project about education 
 
-Hacking SolarHacks
+
+It is based off Kahoot and separates teams into a quiz game, where teams need to work together.
 
 
+
+
+Made at solarhacks 2019
