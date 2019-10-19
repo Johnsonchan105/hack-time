@@ -12,7 +12,8 @@ import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
 public class idontknwo extends Application {
-    SelectionGroup<Student> allstudents;
+    ArrayList<String> totals = new ArrayList<String>();
+    int numOfGroups = 0;
     public static void main(String[] args) {
         launch(args);
     }
