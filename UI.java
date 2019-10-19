@@ -31,7 +31,7 @@ public class UI extends Application {
 
         Text enter = new Text("Enter Name");
         enter.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
-        pane.add(enter, 0, 0, 2, 1);
+        pane.add(enter, 0, 0, 2, 1); 
         pane.add(new Label("Name: "), 0, 1);
         Button b = new Button("Next");
         pane.add(b, 0,2);
