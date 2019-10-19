@@ -17,7 +17,7 @@ public class SelectionGroup(){
   }
   public void removeStudent(Student student){
     for(int i=0;i<names.length();i++){
-      if((names.get(i)).equals(student.name);
+      if((names.get(i)).equals(student.name));
         names.remove(i);
         student.remove(i);
         break;

@@ -7,10 +7,6 @@ public class Question {
       q = ques;
       correctAns = corr;
   }
-  public void inquire() {
-    //make a modification to answers here
-    System.out.println(answers);
-  }
   public boolean validAns(SelectionGroup s, int ans) {
       if (ans == correctAns) {
         s.score += 10;
@@ -21,5 +17,4 @@ public class Question {
         return false;
       }
   }
-  
 }
