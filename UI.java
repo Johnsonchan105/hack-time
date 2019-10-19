@@ -55,7 +55,7 @@ public class idontknwo extends Application {
 
 
         Scene scene = new Scene(pane, 300, 275);
-        primaryStage.setTitle("Enter Student Name");
+        primaryStage.setTitle("Enter the Student's FULL NAME:");
         primaryStage.setScene(scene);
         primaryStage.show();
 
