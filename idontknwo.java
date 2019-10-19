@@ -12,9 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
 public class idontknwo extends Application {
-    int numOfGroups = 0;
-    ArrayList<String> totals = new ArrayList<String>();
-
+    SelectionGroup<Student> allstudents;
     public static void main(String[] args) {
         launch(args);
     }
@@ -57,7 +55,7 @@ public class idontknwo extends Application {
             }
         });
         Scene scene = new Scene(pane, 300, 275);
-        primaryStage.setTitle("Enter Student Name");
+        primaryStage.setTitle("Enter the Student's FULL NAME:");
         primaryStage.setScene(scene);
         primaryStage.show();
 

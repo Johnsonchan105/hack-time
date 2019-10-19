@@ -1,6 +1,7 @@
 public class SelectionGroup(){
   public ArrayList<Student> students;
   private ArrayList<String> names;
+  private ArrayList<String> selected;
   private String groupname;
   public int score = 0;
   public SelectionGroup(String name){
@@ -27,7 +28,12 @@ public class SelectionGroup(){
   public ArrayList<String> listAllStudents(){
     return names;
   }
-  public String toString() {
-    return students;
+  public ArrayList<String> pickRandomSubgroup(int numstudents){
+    for(int i=0;i<selected.length();i++) selected.remove(i);
+    for(int i=0;i<numStudents;i++){
+      selected.add(names.get(i));
+      names.remove(i);
+      students.remove(i);
+    }
   }
 }
