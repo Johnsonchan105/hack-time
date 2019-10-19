@@ -2,6 +2,7 @@ public class SelectionGroup(){
   public ArrayList<Student> students;
   private ArrayList<String> names;
   private String groupname;
+  public int score = 0;
   public SelectionGroup(String name){
     groupname = name;
     names = new Arraylist<Student>;
