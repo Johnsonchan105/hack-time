@@ -1,5 +1,5 @@
 public class SelectionGroup(){
-  private ArrayList<Student> students;
+  public ArrayList<Student> students;
   private ArrayList<String> names;
   private String groupname;
   public SelectionGroup(String name){
@@ -26,5 +26,7 @@ public class SelectionGroup(){
   public ArrayList<String> listAllStudents(){
     return names;
   }
-
+  public String toString() {
+    return students;
+  }
 }
